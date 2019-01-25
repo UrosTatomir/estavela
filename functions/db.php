@@ -1,7 +1,7 @@
 <?php
 
 $con = mysqli_connect('localhost','root','','estavela_db');
-//change localhost,root,password
+//change localhost,root(estavela_user),password(Blustorm1968.)
 
 function row_count($result){
 

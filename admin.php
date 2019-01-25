@@ -10,10 +10,10 @@
 
            //  $email = $_SESSION['email'];
           	// echo'Logged in - '.$email;
-
+            redirect("index.php");
           } else {
 
-          	redirect("index.php");
+          	redirect("login.php");
 
           }
 
@@ -23,7 +23,7 @@
                        
                        <div class="col col-lg-2">
                       
-                            <a href="#"><img src="images/vidi_me_mini.jpg" class="img-responsive img-circle margin" style="display:inline"  width="150" height="232"/></a>
+                            <!-- <a href="#"><img src="images/estavela.logo.jpg" class="img-responsive img-circle margin" style="display:inline"  width="150" height="150"/></a> -->
                        </div> 
 
                        <div class="col col-lg-2"> <!-- empty col -->
@@ -32,7 +32,7 @@
                        
                        <div class="col-md-auto">
                              
-                             <h1 class="text-center" style="font-family: Comic Sans MS,cursive, sans-serif; font-size: 90px; color: #BF04C8;">Vidi Me</h1>
+                             <!-- <h1 class="text-center" style="font-family: Comic Sans MS,cursive, sans-serif; font-size: 60px; color: #FED502;">Estavela</h1> -->
                              <!-- <h4 class="text-center"><a href="#" class="text-info">Resize the browser window to see the effect</a></h4> -->
                        </div>                
 

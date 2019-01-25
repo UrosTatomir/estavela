@@ -113,7 +113,7 @@ function send_email($email=null, $subject=null, $message=null, $headers=null){
     $mail->SMTPSecure = 'tls'; 
     $mail->isHTML(true);
     $mail->Charset = 'UTF-8'; 
-    $mail->setFrom('tatomir.uros@gmail.com','Uros Tatomir');
+    $mail->setFrom('tatomir.uros@estavela.in.rs','Uros Tatomir');
     $mail->addAddress($email);                     
      
 
@@ -283,7 +283,7 @@ function register_user($username,$email,$password){
 
           //http://vidime.org/vidime_app/activate.php?email=$email&code=$validation_code";
 
-          $headers = "From: estavela@estavela.com";
+          $headers = "From: tatomir.uros@estavela.in.rs";
 
           send_email($email, $subject, $message, $headers);
 
@@ -482,7 +482,7 @@ function recover_password(){
               <a href=\"". Config::DEVELOPMENT_URL ."/code.php?email={$email}&code={$validation_code}\">". Config::DEVELOPMENT_URL ."/code.php?email=some@{$email}&code={$validation_code}</a>";
               //http://vidime.org/vidime_app/code.php?email=$email&code=$validation_code
               
-              $headers = "From  estavela@estavela.com";
+              $headers = "From  tatomir.uros@estavela.in.rs";
 
               send_email($email, $subject, $message, $headers);
              
